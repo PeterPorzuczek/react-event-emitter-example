@@ -36,7 +36,9 @@ class WeekSlider extends Component {
         i + 1 < current ? "visited" : i + 1 === current ? "current" : "future";
       weeks.push(
         <li key={i} className={weekClassName}>
-          <em week={i + 1} onClick={this.weekClick} />
+          <em week={i + 1} onClick={this.weekClick}>
+            {i + 1}
+          </em>
         </li>
       );
     }

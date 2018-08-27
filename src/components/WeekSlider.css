@@ -226,17 +226,17 @@
 }
 
 .cd-multi-steps.count li {
-  counter-increment: steps
+  /* counter-increment: steps */
 }
 
 .cd-multi-steps.count li>*::before {
-  content: counter(steps) " - "
+  /* content: counter(steps) " - " */
 }
 
 @media only screen and (min-width:768px) {
   .cd-multi-steps.text-top.count li>*::before,
   .cd-multi-steps.text-bottom.count li>*::before {
-    content: counter(steps);
+    /* content: counter(steps); */
     height: 26px;
     width: 26px;
     line-height: 26px;
